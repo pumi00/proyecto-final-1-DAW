@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+}
+
+body {
+  /* Fondo más profundo para que las tarjetas resalten */
+  background-color: #0b0c10;
+  color: #ffffff;
+  display: flex;
+}
+
+/* Menú Lateral */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  padding: 20px;
+  position: fixed;
+  background-color: #0b0c10;
+  border-right: 1px solid #1f2833; /* Línea sutil de separación */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  margin-bottom: 40px;
+  /* Degradado para que el nombre "VAPOR" destaque */
+  background: linear-gradient(90deg, #66fcf1, #45a29e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu-section {
+  margin-bottom: 25px;
+}
+
+.menu-section h3 {
+  font-size: 14px; /* Un poco más pequeño para estilo moderno */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #888; /* Color discreto para los títulos de sección */
+  margin-bottom: 15px;
+}
+
+.menu-section ul {
+  list-style: none;
+}
+
+/* Links del menú lateral */
+.menu-section ul li a,
+.main-link {
+  color: #c5c6c7; /* Gris claro por defecto */
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  padding: 8px 0;
+  transition: 0.3s;
+}
+
+/* Hover: Cuando pasas el ratón por el menú lateral */
+.menu-section ul li a:hover,
+.main-link:hover {
+  color: #66fcf1; /* Cambia al cian neón */
+  padding-left: 5px; /* Pequeña animación de movimiento */
+}
+
+/* Contenido Principal */
+.main-content {
+  margin-left: 250px;
+  padding: 40px;
+  width: 100%;
+  background-color: #0b0c10;
+}
+
+header h1 {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+/* Cuadrícula de Juegos */
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.game-card {
+  background-color: #1f2833; /* Gris oscuro azulado para las tarjetas */
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.game-card:hover {
+  transform: translateY(-5px); /* Flota un poco hacia arriba */
+  border: 1px solid #45a29e; /* Aparece un borde neón sutil */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+  width: 100%;
+  height: 180px;
+  background-color: #0b0c10; /* Color de carga si no hay imagen */
+  background-size: cover;
+  background-position: center;
+}
+
+.card-info {
+  padding: 20px;
+}
+
+/* La etiqueta de plataforma (PC, PS5, etc) */
+.platform-tag {
+  font-size: 11px;
+  font-weight: bold;
+  color: #66fcf1; /* Texto cian */
+  background: rgba(102, 252, 241, 0.1); /* Fondo cian muy transparente */
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.card-info h3 {
+  font-size: 18px;
+  color: #ffffff;
+}
