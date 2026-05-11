@@ -25,7 +25,7 @@ body {
   padding: 20px;
   position: fixed;
   background-color: #0b0c10;
-  border-right: 1px solid #1f2833; /* Línea sutil de separación */
+  border-right: 1px solid #1f2833;
 }
 
 .logo {
@@ -33,7 +33,6 @@ body {
   font-weight: 800;
   letter-spacing: 4px;
   margin-bottom: 40px;
-  /* Degradado para que el nombre "VAPOR" destaque */
   background: linear-gradient(90deg, #66fcf1, #45a29e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -44,10 +43,10 @@ body {
 }
 
 .menu-section h3 {
-  font-size: 14px; /* Un poco más pequeño para estilo moderno */
+  font-size: 14px; 
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #888; /* Color discreto para los títulos de sección */
+  color: #888;
   margin-bottom: 15px;
 }
 
@@ -58,7 +57,7 @@ body {
 /* Links del menú lateral */
 .menu-section ul li a,
 .main-link {
-  color: #c5c6c7; /* Gris claro por defecto */
+  color: #c5c6c7; 
   text-decoration: none;
   font-size: 15px;
   display: block;
@@ -69,8 +68,8 @@ body {
 /* Hover: Cuando pasas el ratón por el menú lateral */
 .menu-section ul li a:hover,
 .main-link:hover {
-  color: #66fcf1; /* Cambia al cian neón */
-  padding-left: 5px; /* Pequeña animación de movimiento */
+  color: #66fcf1; 
+  padding-left: 5px; 
 }
 
 /* Contenido Principal */
@@ -96,7 +95,7 @@ header h1 {
 }
 
 .game-card {
-  background-color: #1f2833; /* Gris oscuro azulado para las tarjetas */
+  background-color: #1f2833; 
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -104,15 +103,15 @@ header h1 {
 }
 
 .game-card:hover {
-  transform: translateY(-5px); /* Flota un poco hacia arriba */
-  border: 1px solid #45a29e; /* Aparece un borde neón sutil */
+  transform: translateY(-5px);
+  border: 1px solid #45a29e;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .card-img {
   width: 100%;
   height: 180px;
-  background-color: #0b0c10; /* Color de carga si no hay imagen */
+  background-color: #0b0c10; 
   background-size: cover;
   background-position: center;
 }
@@ -125,8 +124,8 @@ header h1 {
 .platform-tag {
   font-size: 11px;
   font-weight: bold;
-  color: #66fcf1; /* Texto cian */
-  background: rgba(102, 252, 241, 0.1); /* Fondo cian muy transparente */
+  color: #66fcf1; 
+  background: rgba(102, 252, 241, 0.1);
   padding: 4px 10px;
   border-radius: 6px;
   margin-bottom: 12px;
